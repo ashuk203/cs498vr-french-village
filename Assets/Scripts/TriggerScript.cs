@@ -29,6 +29,6 @@ public class TriggerScript : MonoBehaviour
 
     void OnVRTriggerDown()
     {
-        summoned = true;
+        summoned = !summoned;
     }
 }

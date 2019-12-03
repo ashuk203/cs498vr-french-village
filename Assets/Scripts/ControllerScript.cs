@@ -32,6 +32,11 @@ public class ControllerScript : MonoBehaviour
                 if (go == man)
                 {
                     man.SendMessage("OnVREnter");
+                    if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                    {
+                        // man.SendMessage("OnVREnter");
+                        boule.SendMessage("OnVRTriggerDown");
+                    }
 
                 } else
                 {
@@ -46,11 +51,7 @@ public class ControllerScript : MonoBehaviour
             go = dummy;
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
-        {
-            // man.SendMessage("OnVREnter");
-            boule.SendMessage("OnVRTriggerDown");
-        }
+
 
     }
 

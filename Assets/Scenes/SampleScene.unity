@@ -1034,6 +1034,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   summonedPos: {x: 84.40802, y: 15, z: 156.9169}
   hiddenPos: {x: 0, y: 0, z: 0}
+--- !u!64 &1500675347
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500675345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: d886b41c752c3c249aa29557e0c7cac4, type: 3}
 --- !u!1 &1527084409
 GameObject:
   m_ObjectHideFlags: 0
