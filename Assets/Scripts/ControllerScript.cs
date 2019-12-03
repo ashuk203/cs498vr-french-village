@@ -5,10 +5,17 @@ using UnityEngine;
 public class ControllerScript : MonoBehaviour
 {
     public GameObject go;
+    public GameObject man;
+    public GameObject boule;
+
+    private GameObject dummy;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        go = new GameObject();
+        dummy = new GameObject();
+
     }
 
     // Update is called once per frame
@@ -21,13 +28,30 @@ public class ControllerScript : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                if (go != hit.collider.gameObject)
+                go = hit.collider.gameObject;
+                if (go == man)
                 {
-                    go = hit.transform.gameObject;
-                    go.SendMessage("OnVREnter");
+                    man.SendMessage("OnVREnter");
+
+                } else
+                {
+                    man.SendMessage("OnVRExit");
                 }
+   
             }
         }
+        else
+        {
+            man.SendMessage("OnVRExit");
+            go = dummy;
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        {
+            // man.SendMessage("OnVREnter");
+            boule.SendMessage("OnVRTriggerDown");
+        }
+
     }
 
 }

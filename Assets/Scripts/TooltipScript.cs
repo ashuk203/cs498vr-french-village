@@ -13,12 +13,26 @@ public class TooltipScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        helpText = GameObject.Find("HelpText").GetComponent<Text>();
+        tooltipText = GameObject.Find("TooltipText").GetComponent<Text>();
     }
+
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void OnVREnter()
+    {
+        helpText.text = helpString;
+        tooltipText.text = tooltipString;
+    }
+
+    void OnVRExit()
+    {
+        helpText.text = " ";
+        tooltipText.text = " ";
     }
 }
