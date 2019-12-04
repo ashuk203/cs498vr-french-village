@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class TriggerScript : MonoBehaviour
 {
+    public float riseHeight;
     private bool summoned = false;
-    public Vector3 summonedPos, hiddenPos;
+    private Vector3 summonedPos, hiddenPos;
     // Start is called before the first frame update
     void Start()
     {
         hiddenPos = transform.position;
+        summonedPos = hiddenPos + (new Vector3(0, riseHeight, 0));
     }
 
     // Update is called once per frame
