@@ -21,12 +21,10 @@ public class TriggerScript : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, hiddenPos, Time.deltaTime * 5f);
         }
-
-        if (summoned)
+        else if (summoned)
         {
             transform.position = Vector3.Lerp(transform.position, summonedPos, Time.deltaTime * 5f);
         }
-
     }
 
     void OnVRTriggerDown()

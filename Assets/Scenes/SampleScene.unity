@@ -715,6 +715,7 @@ MonoBehaviour:
   tooltipText: {fileID: 1527084411}
   helpString: Bonjour (tapez l'amorce pour continuer)
   tooltipString: Bienvenue en France. Je suis votre guide
+  boule: {fileID: 0}
 --- !u!64 &996600407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -872,7 +873,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdkjfasd
+  m_Text: 
 --- !u!222 &1302468858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1041,7 +1042,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riseHeight: 50
-  summoned: 0
 --- !u!64 &1500675347
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1126,7 +1126,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: test script
+  m_Text: 
 --- !u!222 &1527084412
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1472,6 +1472,7 @@ MonoBehaviour:
   tooltipText: {fileID: 1527084411}
   helpString: 'Bonjour! '
   tooltipString: Bienvenue en France
+  boule: {fileID: 1500675345}
 --- !u!1 &2106968866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,5 +1614,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go: {fileID: 0}
-  man: {fileID: 2010845948}
-  boule: {fileID: 1500675345}
